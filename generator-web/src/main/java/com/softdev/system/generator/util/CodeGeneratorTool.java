@@ -1,7 +1,6 @@
 package com.softdev.system.generator.util;
 
 
-
 import com.softdev.system.generator.entity.ClassInfo;
 
 import java.io.IOException;
@@ -13,14 +12,14 @@ import java.io.IOException;
  */
 public class CodeGeneratorTool {
 
-	/**
-	 * process Table Into ClassInfo
-	 *
-	 * @param tableSql
-	 * @return
-	 */
-	public static ClassInfo processTableIntoClassInfo(String tableSql) throws IOException {
-		return TableParseUtil.processTableIntoClassInfo(tableSql);
-	}
+    /**
+     * process Table Into ClassInfo
+     *
+     * @param tableSql
+     * @return
+     */
+    public static ClassInfo processTableIntoClassInfo(String tableSql) throws IOException {
+        return TableParseUtil.processTableIntoClassInfo(tableSql);
+    }
 
 }

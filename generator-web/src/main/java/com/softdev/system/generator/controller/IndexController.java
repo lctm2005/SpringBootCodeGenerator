@@ -37,13 +37,10 @@ public class IndexController {
     @ResponseBody
     public ReturnT<Map<String, String>> codeGenerate(String tableSql,
                                                      //2019-2-10 liutf 修改为@RequestParam参数校验
-                                                     @RequestParam(required = false, defaultValue = "大狼狗") String authorName,
-                                                     @RequestParam(required = false, defaultValue = "com.softdev.system")String packageName
+                                                     @RequestParam(required = false, defaultValue = "licong") String authorName,
+                                                     @RequestParam(required = false, defaultValue = "com.nd.elearning")String packageName
     ) {
-
-
         try {
-
             if (StringUtils.isBlank(tableSql)) {
                 return new ReturnT<>(ReturnT.FAIL_CODE, "表结构信息不可为空");
             }

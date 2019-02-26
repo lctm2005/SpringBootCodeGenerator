@@ -14,5 +14,6 @@ public class FieldInfo {
     private String fieldName;
     private String fieldClass;
     private String fieldComment;
-
+    private String annotation;
+    private boolean isPrimaryKey = false;
 }
